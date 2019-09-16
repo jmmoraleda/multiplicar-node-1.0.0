@@ -35,7 +35,7 @@ let crearArchivo = (base, limite = 10) => {
         fs.writeFile(`tablas/tabla-${ base }-al-${ limite }.txt`, data, (err) => {
 
             if (err)
-                reject(err)
+                reject(err);
             else
                 resolve(`tabla-${ base }-al-${ limite }.txt`);
 
@@ -45,6 +45,7 @@ let crearArchivo = (base, limite = 10) => {
 
 }
 
+// Con esto permitimos que se puedan usar las funciones desde otros archivos, de manera global
 module.exports = {
     crearArchivo,
     listarTabla
