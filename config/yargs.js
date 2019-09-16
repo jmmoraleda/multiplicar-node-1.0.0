@@ -17,6 +17,7 @@ const argv = require('yargs')
     .argv;
 
 
+// Para poder utilizarlo fuera de este archivo
 module.exports = {
     argv
 }
